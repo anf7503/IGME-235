@@ -1,0 +1,3 @@
+ErrorDocument 404 /anf7503/235/error/error.html
+
+DirectoryIndex noterror.html
