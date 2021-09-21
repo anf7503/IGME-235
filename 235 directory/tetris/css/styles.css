@@ -1,0 +1,52 @@
+main, header, footer {
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+figure {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure img {
+    width:100%;
+}
+
+#tetlist {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+div.tet {
+    flex: 0 1 200px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+div.tet square {
+    flex: 0 1 160px;
+}
+
+div.tet long {
+    flex: 0 1 240px;
+}
+
+div img {
+    width:60%;
+}
+
+span {
+    display:block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size:large;
+}
+
+div.aliases {
+    text-align: left;
+    margin-left: 1em;
+}
