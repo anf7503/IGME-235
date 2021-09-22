@@ -17,8 +17,8 @@ header {
     float: left;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 18em;
-    margin-right: 3em;
+    margin-left: 5em;
+    margin-right: 2em;
     height:25em;
 }
 #bio {
@@ -29,8 +29,7 @@ header {
 
 #bio p {
     font-size: x-large;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     line-height: 1.6;
 }
 
