@@ -1,25 +1,42 @@
 body {
-    font: 1em Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    font-size: large;
+    color: #25291C;
+    background-color: #8EF5A0;
 }
 header {
-    border-bottom: 1px solid black;
     text-align:center;
+    margin-bottom: 1em;
 }
 
-h1, h2, h3 {
+.heading {
     font-family: 'Oswald', Arial, sans-serif;
 }
 
 #bio img{
     float: left;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 18em;
-    margin-right: 2em;
+    margin-right: 3em;
     height:25em;
 }
 #bio {
     display: flex;  
+    background-color: #6DC0D5;
+    border-radius: 50px;
+}
+
+#bio p {
+    font-size: x-large;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 1.6;
+}
+
+#projects {
+    background-color: #a4c2e6;
+    border-radius: 50px;
 }
 
 h2 {
@@ -28,7 +45,6 @@ h2 {
 
 h2, h3 {
     text-align: center;
-    border-top: 1px solid black;
 }
 
 #intro {
@@ -38,5 +54,41 @@ h2, h3 {
 
 .projects {
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 45px;
+}
+
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #666BA3;
+    border-radius: 50px;
+}
+
+a:link {
+    color: #E6E49F;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: #8EF5A0;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #B4DDCC;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: #6DC0D5;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#valid {
+    float: right;
+    margin-right: 25px;
 }
