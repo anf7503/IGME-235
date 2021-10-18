@@ -1,0 +1,94 @@
+/**************************************
+General Formatting (Leave This Alone!)
+**************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    background-color:blanchedalmond;
+}
+
+header,
+footer {
+    /* centers header and footer content horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #86af49;
+}
+
+nav,
+aside,
+article {
+    padding: .5rem;
+    background-color: #b5f7a0;
+}
+
+nav, aside {
+    background-color: #b5e7a0;
+    border: 1px dotted black; 
+}
+
+/*****************
+Grid Formatting  
+*****************/
+
+#wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 2fr 10fr 2fr 1fr;
+    grid-template-areas: "header"
+                         "navbar"
+                         "content"
+                         "sidebar"
+                         "footer";
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 760px) {
+#wrapper {
+    grid-template-rows: 2fr 8fr 2fr;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-areas: "header header header"
+                         "navbar content sidebar"
+                         "navbar footer sidebar";
+}
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+article {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}

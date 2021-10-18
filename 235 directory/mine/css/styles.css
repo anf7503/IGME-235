@@ -1,0 +1,176 @@
+@font-face {
+    font-family: header-text;
+    src: url(../DesignToSpecAssets/Fonts/RetroComputer/retro_computer_personal_use-webfont.woff);
+}
+
+@font-face {
+    font-family: body-text;
+    src: url(../DesignToSpecAssets/Fonts/Dogica/dogicapixel-webfont.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    color: #FFF;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: body-text, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+body {
+    background-color: #35363D;
+}
+
+#container {
+    position: relative;
+    height: 100vh;  
+    width: 35%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 18fr 16fr 6fr;
+    grid-template-areas: "header"
+                         "tree"
+                         "valley"
+                         "items" 
+                         "footer";
+    margin: 0 auto;
+}
+
+
+header {
+    grid-area: header;
+    background-color: #686868;
+    font-family: header-text, Arial, Helvetica, sans-serif;
+    position: relative;
+    font-weight:lighter;
+    font-size: small;
+}
+
+header h1 {
+    float: left;
+    margin-left: 50px;  
+    position: absolute;
+    bottom: 5px;
+}
+
+header h2 {
+    float: right;
+    text-align: right;
+    margin-right:50px;
+}
+
+object {
+    margin-left: 175px;
+}
+
+#tree {
+    grid-area: tree;
+    background-color: #35363D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#treedesc {
+    background-color: #686868;
+    margin-left: 20px;
+    margin-right: -20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    text-align: left;
+    width: 240px;
+    height: 235px;
+}
+
+#tree p{
+    clear: left;
+}
+
+#tree img {
+    width: 250px;
+    height: 235px;
+    float: right;
+    border: 3.5px solid #FFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+    background-image: linear-gradient(to bottom right, #E8FDF5, #244D3E);
+}
+
+#elements {
+    grid-area: items;
+    display: grid;
+    grid-template-areas: "plank plankbio stick stickbio"
+                         "chest chestbio stairs stairsbio";
+    background-color: #35363D;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#elements img {
+    width: 100%;
+    padding-top: 12.5%;
+    padding-bottom: 7.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: 3.5px solid #FFF;
+    background-color: #324E44;
+}
+
+#elements p {
+    background-color: #686868;
+}
+
+#block {
+    grid-area: valley;
+    background-image: url('../DesignToSpecAssets/Assets/valley.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    grid-area: footer;
+    border-top: 3.5px solid #FFF;
+    background-image: url('../DesignToSpecAssets/Assets/trees.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#cool-transparency {
+    margin-left: 5%;
+    float: left;
+}
+
+#copy-transparency {
+    margin-left: 20%;
+    float: right;
+}
+
+#cool-transparency h2 {
+    font-weight:lighter;
+    font-size: small;   
+    color:#FFF;
+    background-color: rgba(53, 54, 31, .6);
+    text-align: left;
+}
+#copy-transparency h2 {
+    font-weight:lighter;
+    font-size: small;
+    color:#FFF;
+    background-color: rgba(53, 54, 31, .6);
+    text-align: right;
+}   
+
+

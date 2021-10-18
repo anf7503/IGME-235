@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <title>web-apps-lab-1-af</title>
+   <script>
+     "use strict";
+     // 1) Common JS Objects
+     let colors = ["red", "green", "blue"]; // Array literal
+     let person = {name:"Fred", age:20};   // Object literal
+     let month = new Date().getMonth(); 
+     let age = Math.round(20.999);
+     let age2 = Math.floor(20.999);
+     let y = Number("fred");
+
+     // add your new code here.
+     colors.push("yellow");
+     console.log(colors[colors.length-1]);
+     for (let i = 0; i < colors.length; ++i)
+     {
+        console.log(colors[i]);
+     }
+     person.school = "RIT";
+     console.log(person.school);
+     let seventy = new Date("Dec 31, 1970 23:59:59");
+     console.log(Math.abs(month - seventy) / 1000);    
+     console.log(Math.PI);
+     console.log(Math.abs(-999));
+     let hi = "Hello";
+     console.log(hi.toUpperCase());
+     
+</script>
+</head>
+<body>
+</body>
+</html>

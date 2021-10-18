@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    color: #25291C;
+    background-color: #7682ff;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+#container {
+    height: 100vh;
+    width:auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 5fr 5fr 15fr 5fr 5fr 5fr 1fr;
+    grid-template-areas: "head"
+                         "tagline"
+                         "navbar"
+                         "about"
+                         "resume" 
+                         "gallery"
+                         "sub1"
+                         "sub2"
+                         "sub3"
+                         "foot";
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 960px) {
+    #container {
+        grid-template-rows: 1fr 1fr 1fr 5fr 15fr 5fr 5fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "head head"
+                             "tagline tagline"
+                             "navbar navbar"
+                             "about resume"
+                             "gallery gallery"
+                             "sub1 sub2"
+                             "sub3 empty"
+                             "foot foot";
+    }
+}
+
+header {
+    grid-area: head;
+    font-family: 'Oswald', Arial, sans-serif;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+#tag {
+    grid-area: tagline;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: xx-large ;
+}
+
+nav {
+    grid-area: navbar;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #666BA3;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+
+#aboutMe {
+    grid-area: about;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:5%;
+    border-radius: 10px;
+    background-color: rgba(109, 192, 213, .6);
+    font-size: x-large;
+    line-height: 1.6;
+}
+
+#resumeLink {
+    grid-area: resume;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(109, 192, 213, 0.8);
+    padding:3%;
+    border-radius: 10px;
+}
+
+#projects {
+    grid-area:gallery;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    background-color: #a4c2e6;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.proj {
+    height: 500px;
+    width: 95%;
+    background-color: violet;
+    margin: 10px;
+    overflow: hidden; /* hidden for now, it was showing scroll even when there was nothing to scroll */
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.proj p, .proj a {
+    padding-left: 20%;
+    padding-right: 30%;
+    line-height: 1.6;
+}
+
+#proj1 {
+    grid-area:sub1;
+}
+
+#proj2 {
+    grid-area:sub2;
+}
+
+#proj3 {
+    grid-area:sub3;
+}
+
+#empty {
+    grid-area: empty;
+}
+
+footer {
+    grid-area: foot;
+    background-color: #666BA3;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-bottom: 1%;
+}
+
+iframe {
+    border: 0;
+}
+
+a {
+    font-weight: bold;
+}
+
+a:link {
+    color:#fff;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:visited {
+    color:#8f8;
+    background-color: transparent;
+    text-decoration: underline;
+}
+    
+a:hover, a:focus {
+    color: #e2e2e2;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: #e33;
+    background-color: transparent;
+    text-decoration: underline;
+}
