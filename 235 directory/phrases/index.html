@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Spongebob Quotes</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <script>
+            "use strict";
+
+            window.onload = init;
+
+            function init()
+            {
+                let quotes = [
+                    "\"Is mayonaise an instrument?\" - Patrick Star",
+                    "\"In case you forgot, here's how things work. I order the food, you cook the food, then the customer gets the food. We do that for 40 years, and then we die. Sounds like a pretty good deal to me. Whadda ya say?\" - Squidward Tentacles",
+                    "\"The Krusty Krab pizza is the pizza for you and me!\" - Spongebob Squarepants",
+                    "\"Meow\" - Gary",
+                    "\"What's so great about dumb old Texas.\" - Patrick Star",
+                    "\"What did you say?\" - Sandy Cheeks",
+                    "\"Show's over, cheapskate!\" - Mr. Eugene H. Krabs",
+                    "\"Oh brother, this guy stinks!\" - Random Fish",
+                    "\"It's not just a boulder. It's a rock. A rock!\" - Spongebob Squarepants",
+                    "\"Wow, thanks! I've been dying for one of these. It... Where's my drink?\" - Random Fish",
+                    "\"Hey everybody! It's Leif Erikson Day! Hinga-dinga-durgen!\" - Spongebob Squarepants",
+                    "\"Oh, boo-hoo! Let me play a sad song for you on the world's smallest violin.\" - Mr. Eugene H. Krabs",
+                    "\"My leg!\" - Fred",
+                    "\"Another day, another migrane.\" - Squidward Tentacles",
+                    "\"Taaa-ta-ta-ta-ta-ta-tonight?\" - Squidward Tentacles",
+                    "\"You forgot the pickles!\" - Bubble Bass",
+                    "\"No! You'll never get a cent out of me! Never! I'd rather that worm come in here right now and eat you all alive!\" - Mr. Eugene H. Krabs",
+                    "\"What the scallop!\" - Sheldon J. Plankton",
+                    "\"All bubble-blowing babies will be beaten senseless by every able-bodied patron in the bar.\" - Thug Tug patrons",
+                    "\"I took the boots! They're here! Under the floorboards! Ah, please! Make it stop! It's the squeaking of the hideous boots!\" - Mr. Eugene H. Krabs",
+                    "\"Chocolate! Chocolate! Chocolate!\" - Random Fish",
+                    "\"Maybe someday.\" - Magic Conch",
+                    "\"Nothing.\" - Magic Conch",
+                    "\"Neither.\" - Magic Conch",
+                    "\"I don't think so.\" - Magic Conch",
+                    "\"Yes.\" - Magic Conch",
+                    "\"Try asking again.\" - Magic Conch",
+                    "\"Imagination!\" - Spongebob Squarepants",
+                    "\"F is for friends that do stuff together.\" - Spongebob Squarepants",
+                    "\"U is for you and me.\" - Spongebob Squarepants",
+                    "\"N is for anywhere and anytime at all down here in the deep blue sea.\" - Spongebob Squarepants",
+                    "\"F is for fire that burns down the whole town.\" - Sheldon J. Plankton",
+                    "\"U is for Uranium....Bombs!\" - Sheldon J. Plankton",
+                    "\"N is for no survivors WHEN YOU'RE-\" - Sheldon J. Plankton",
+                    "\"And it's sweet, sweet, sweet victory, yeah!\" - Spongebob Squarepants",
+                    "\"No\" - Magic Conch",
+                    "\"Who lives in a pineapple under the sea?\" - Painty the Pirate",
+                    "\"Krusty Krab is unfair! Mr. Krabs is in there! Standing at the concession! Plotting his oppression!\" - Spongebob Squarepants",
+                    "\"Oh come on SpongeBob! You know, I wumbo, You wumbo, He she me wumbo, wumbo, Wumboing, We'll have thee wumbo, Wumborama, Wumbology, The study of wumbo? It's first grade SpongeBob!\" - Patrick Star"
+                ]
+
+                let quotesBox = document.querySelector("p");
+                let gen = document.querySelector("button");
+
+                let ChangeText = (e) =>
+                {
+                    let rng = Math.floor(Math.random() * quotes.length);
+                    quotesBox.innerHTML = quotes[rng];
+                }
+
+                gen.addEventListener("click", ChangeText);
+            }
+
+
+        </script>
+    </head>
+
+    <body>
+        <header>
+            SpongeBob Quotes
+        </header>
+
+        <div>
+            <p>"Are ya ready, kids!" - Painty the Pirate</p>
+        </div>
+
+        <button type="button">
+            Get a quote!
+        </button>
+
+        <footer>
+            Website made by Aaron Fleischer. Spongebob Squarepants is owned by Viacom. 'Staatliches' font from Google Fonts.
+        </footer>
+    </body>
+</html>

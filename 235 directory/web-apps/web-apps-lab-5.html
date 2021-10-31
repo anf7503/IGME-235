@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Apps-5</title>
+	<style>
+		body{
+			font-family:sans-serif;
+		}
+		#colorform{
+			background-color:#dfecdf;
+			color: #111;
+			padding:1em;width:400px;
+		}
+		#colorform p#info{
+			background-color:white;
+			color: black;
+			width:300px;
+			height:100px;
+			padding:.5em;
+		}
+		
+		#colorform legend{ 
+			font-weight:bold;
+			font-size:1.2em;
+		}
+	</style>
+</head>
+<body>
+
+<div id="colorform">
+	<legend>Choose your favorite color!</legend>
+	<p><input type="radio" name="colorGroup" id="colorGroupRed" value="red" /> Red</p>
+	<p><input type="radio" name="colorGroup" id="colorGroupGreen" value="green" /> Green</p>
+	<p><input type="radio" name="colorGroup" id="colorGroupBlue" value="blue" /> Blue</p>
+	<p><button id="colorButton" type="button">Submit</button></p>
+	<p id="info"></p>
+</div>
+
+<script>
+/* Write your code here! */
+
+let legend = document.querySelector("legend");
+let red = document.querySelector("#colorGroupRed");
+let green = document.querySelector("#colorGroupGreen");
+let blue = document.querySelector("#colorGroupBlue");
+let submit = document.querySelector("#colorButton");
+let info = document.querySelector("p#info");
+
+let changeText = (e) => 
+{
+     if (e.target == submit)
+     {
+        if (red.checked) 
+        {
+            info.innerHTML = "Your FINAL CHOICE is \"" + red.value + "\"!";
+        }
+        else if (green.checked) 
+        {
+            info.innerHTML = "Your FINAL CHOICE is \"" + green.value + "\"!";
+        }
+        else if (blue.checked) 
+        {
+            info.innerHTML = "Your FINAL CHOICE is \"" + blue.value + "\"!";
+        }
+     }
+     else
+     {
+        info.innerHTML = "You have selected \"" + e.target.value + "\"!";
+     }
+};
+let changeColor = (e) => 
+{ 
+    if (red.checked) 
+    {
+        legend.style.color = red.value; 
+    }
+    if (green.checked) 
+    {
+        legend.style.color = green.value;
+    }
+    if (blue.checked) 
+    {
+        legend.style.color = blue.value;
+    }
+};
+
+
+red.addEventListener("change",changeText);
+green.addEventListener("change",changeText);
+blue.addEventListener("change",changeText); 
+
+submit.addEventListener("click", changeText);
+submit.addEventListener("click", changeColor);
+
+
+</script>
+</body>
+</html>
