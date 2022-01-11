@@ -1,0 +1,102 @@
+body {
+    text-align: center;
+    color:#2e51a2;
+    font-size: large;
+    font-family: 'Fira Sans', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pageName {
+    color:white;
+    background-color: #2e51a2;
+    padding: 25px;
+    font-size: xx-large;
+    width: auto;
+}
+
+.search {
+    background-color: #2e51a2;
+    color:white;
+    border-radius: 5px;
+}
+
+.search:hover, .search:focus {
+    text-decoration: underline;
+}
+
+#content {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#content #number {
+    width: 100vw;
+}
+
+.result {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid #f0f0f0;
+    margin: 10px;
+    box-shadow: 2px 2px 2px #f0f0f0;
+}
+
+.result header {
+    border-bottom: 1px solid #f0f0f0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.result main {
+    line-height: 22px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    color: black;
+}
+
+.result main:hover {
+    overflow-y: auto;
+}
+
+.result img{
+    float:left;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a {
+    font-weight: bolder;
+}
+
+a:link {
+    color: #2e51a2;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: #2e51a2;
+    text-decoration: none;
+}
+  
+a:hover, a:focus {
+    color: #2e51a2;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: rgb(162, 46, 81);
+    text-decoration: underline;
+}

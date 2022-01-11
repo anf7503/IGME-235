@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Miru</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body style= "margin-left: 25%; margin-right: 25%;">
+        <h1>Project 2 Documentation</h1>
+        <h3>Aaron Fleischer</h3>
+        <h2>Process Notes</h2>
+        <p>
+            One of the main things I wanted to do with this API was make it look similar to MyAnimeList. I think I did that pretty well
+            considering that I actually used some of the same colors MyAnimeList uses. I'm honestly surprised it came out this well.
+        </p>
+        <p>The name "Miru" means watch or look in Japanese, so I thought it was appropiate for an anime searching site</p>
+        <p>
+            Having the scroll appear when you hover over the box was anothering thing I was proud of doing. At first, I had overflow: scroll 
+            on at all times, but I didn't like how that looked and it wasn't how MyAnimeList did there results, so I searched on google how 
+            to have the scroll only when its being hovered over.
+        </p>
+        <p>
+            Going back to the similarity to MyAnimeList, The links are the same way with the exception of a:active having a state. I thought that 
+            might make it hard to tell it was a link, so I made it bold. It may be still a bit difficult to determine, but I also made sure the only
+            blue bold fonts were links. It may not help a bunch, but it's there.
+        </p>
+        <p>
+            Moving a bit away from the look of the page, finding the other two ways to access the results was another highlight for me. After looking at 
+            what Jikan returned, I found out how to access the name search results instantly, but I didn't get the genre results on the first try. I did manage 
+            a little while later when I looked at the results again.
+        </p>
+        <p>
+            In my JavaScript, I added three booleans so that all I had to do for each of the different searches was have different initial .onclick 
+            functions and 1 function for when the xhr data loaded with if statements to handle which search is being used.
+        </p>
+        <p>
+            Although I think I could have added some more features if I had organized myself better, I am still rather proud of myself for making the website 
+            look this good to me.
+        </p>
+        <h2>Outside resources</h2>
+        <p><a href="https://jikan.moe">Jikan</a></p>
+        <p><a href="https://myanimelist.net/">MyAnimeList</a></p>
+        <p><a href="https://fonts.google.com/specimen/Fira+Sans">Google Fonts (for Fira Sans)</a></p>
+        <p><a href="https://github.com/tonethar/IGME-235-Shared/blob/master/tutorial/web-service-app-starters.md#anime-schedule-finder">Provided Starter Code</a></p>
+    </body>

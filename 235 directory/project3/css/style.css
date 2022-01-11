@@ -1,0 +1,35 @@
+body
+{
+    color: white;
+    background-color: midnightblue;
+    font-family: 'Orbitron', Verdana, sans-serif;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    margin-bottom: 30px;
+}
+
+a:link {
+    color: white;
+    text-decoration: underline;
+}
+  
+a:visited {
+    color: yellow;
+    text-decoration: underline;
+}
+  
+a:hover, a:focus {
+    color: #cfab68;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: rgb(239, 118, 255);
+    text-decoration: underline;
+}
+

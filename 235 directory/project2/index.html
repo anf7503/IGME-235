@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Miru</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Import jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+
+    <body>
+        <header id="pageName">
+            <h1>Miru</h1>
+        </header>
+        
+        <main>
+            <!-- Searches for anime by name-->
+            <p>
+                Find by name:
+                <input id="anime" type="text" size="40" maxlength="120"/>
+                <button type="button" id="animeName" class="search">Search!</button>    
+            </p>
+
+            <!-- Searches for anime by the day they air -->
+            <p>
+                Find by day of the week:  
+                <select id="day">
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                </select>
+                <button type="button" id="animeDay" class="search">Search!</button>
+            </p>
+
+            <!-- Searches for anime by the genre -->
+            <p>
+                Find by genre:
+                <select id="genre">
+                    <option value="1">Action</option>
+                    <option value="2">Adventure</option>
+                    <option value="46">Award Winning</option>
+                    <option value="3">Cars</option>
+                    <option value="4">Comedy</option>
+                    <option value="6">Demons</option>
+                    <option value="8">Drama</option>
+                    <option value="9">Ecchi</option>
+                    <option value="10">Fantasy</option>
+                    <option value="11">Game</option>
+                    <option value="47">Gourmet</option>
+                    <option value="13">Historical</option>
+                    <option value="14">Horror</option>
+                    <option value="43">Josei</option>
+                    <option value="15">Kids</option>
+                    <option value="17">Martial Arts</option>
+                    <option value="18">Mecha</option>
+                    <option value="38">Military</option>
+                    <option value="19">Music</option>
+                    <option value="7">Mystery</option>
+                    <option value="20">Parody</option>
+                    <option value="39">Police</option>
+                    <option value="40">Psychological</option>
+                    <option value="22">Romance</option>
+                    <option value="21">Samurai</option>
+                    <option value="23">School</option>
+                    <option value="24">Sci Fi</option>
+                    <option value="42">Seinen</option>
+                    <option value="25">Shoujo</option>
+                    <option value="27">Shounen</option>
+                    <option value="36">Slice Of Life</option>
+                    <option value="29">Space</option>
+                    <option value="30">Sports</option>
+                    <option value="31">Super Power</option>
+                    <option value="37">Supernatural</option>
+                    <option value="41">Suspense</option>
+                    <option value="32">Vampire</option>
+                    <option value="48">Work Life</option>
+                </select>
+                <button type="button" id="animeGenre" class="search">Search!</button>    
+            </p>
+            
+            <p>Using Jikan API</p>
+            
+            <h2><i>Results</i></h2>
+
+            <div id="content">
+                <p>No Anime yet!</p>
+            </div>
+        </main>
+
+        <footer>
+            <!-- Documentation here -->
+            <a href="doc.html">Project Documentation</a>
+        </footer>
+    </body>
+</html>

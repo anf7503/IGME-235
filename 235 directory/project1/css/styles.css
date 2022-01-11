@@ -13,29 +13,32 @@ h2, h3 {
     height: 100vh;
     width:auto;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 5fr 5fr 15fr 5fr 5fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 5fr 5fr 1fr 5fr 5fr 5fr 1fr;
     grid-template-areas: "head"
                          "tagline"
                          "navbar"
                          "about"
-                         "resume" 
                          "gallery"
+                         "desc"
                          "sub1"
                          "sub2"
                          "sub3"
                          "foot";
     margin: 0 auto;
+    margin-left: 10%; 
+    margin-right: 10%;
 }
 
 @media screen and (min-width: 960px) {
     #container {
-        grid-template-rows: 1fr 1fr 1fr 5fr 15fr 5fr 5fr 1fr;
+        grid-template-rows: 10% 10% 1fr 2fr 15fr 1fr 5fr 5fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "head head"
                              "tagline tagline"
                              "navbar navbar"
-                             "about resume"
+                             "about about"
                              "gallery gallery"
+                             "desc desc"
                              "sub1 sub2"
                              "sub3 empty"
                              "foot foot";
@@ -47,17 +50,20 @@ header {
     font-family: 'Oswald', Arial, sans-serif;
     display: flex;
     text-align: center;
-    border-bottom: 1px solid black;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
 }
 
 #tag {
     grid-area: tagline;
-    padding-top: 10px;
     text-align: center;
     font-family: 'Oswald', Arial, sans-serif;
-    font-size: xx-large ;
+    font-size: 24px;
+    border-bottom: 1px solid black;
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding-bottom: 1em;
 }
 
 nav {
@@ -70,7 +76,7 @@ nav {
     padding-top: 1%;
     padding-bottom: 1%;
     margin-top: 1%;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
     border-radius: 10px;
 }
 
@@ -80,44 +86,59 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding:5%;
+    padding-left:2%;
+    padding-right: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
     border-radius: 10px;
     background-color: rgba(109, 192, 213, .6);
     font-size: x-large;
     line-height: 1.6;
 }
 
-#resumeLink {
-    grid-area: resume;
-    align-self: center;
-    justify-self: center;
-    background-color: rgba(109, 192, 213, 0.8);
-    padding:3%;
+#projectSect {
+    grid-area:gallery;
+    background-color: #a4c2e6;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-bottom: 20px;
     border-radius: 10px;
 }
 
+#projectSect header h2 {
+    font-family: Arial, sans-serif;
+}
+
 #projects {
-    grid-area:gallery;
     display:flex;
     flex-wrap: wrap;
-    margin-top: 15%;
-    margin-bottom: 5%;
-    background-color: #a4c2e6;
     justify-content: space-around;
-    padding-bottom: 20px;
+}
+
+#heading {
+    grid-area:desc;
+    background-color: rgb(255, 100, 255);
     border-radius: 10px;
+    margin-left: 2%; 
+    margin-right: 2%;
 }
 
 .proj {
     height: 500px;
     width: 95%;
-    background-color: violet;
+    background-color: rgb(255, 150, 255);
     margin: 10px;
-    overflow: hidden; /* hidden for now, it was showing scroll even when there was nothing to scroll */
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
     justify-self: center;
     align-self: center;
     border-radius: 10px;
 }
+
+.proj:hover {
+    overflow-y: auto;
+}
+
 
 .proj p, .proj a {
     padding-left: 20%;
@@ -143,20 +164,17 @@ nav {
 
 footer {
     grid-area: foot;
-    background-color: #666BA3;
+    background-color: #7c80aa;
+    font-weight: bold;
     text-align: center;
     margin-top: 10%;
     margin-bottom: 5%;
     border-radius: 10px;
     align-self: center;
     justify-self: center;
-    padding-left: 35%;
-    padding-right: 35%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 1%;
-}
-
-iframe {
-    border: 0;
 }
 
 a {
@@ -166,25 +184,25 @@ a {
 a:link {
     color:#fff;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
   
 a:visited {
     color:#8f8;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
     
 a:hover, a:focus {
     color: #e2e2e2;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
   
 a:active {
     color: #e33;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* For Documentation Page*/
